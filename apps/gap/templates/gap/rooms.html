@@ -4,6 +4,7 @@
 {% block body %}
     <h3>Room List</h3>
     {% for room in rooms %}
-     <a href="{% url 'gap:room' room.pk  %}"> {{ room }}</a> <br>
+        <a class="fs-4 link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+           href="{% url 'gap:room' room.pk %}"> {{ room }}</a> <br>
     {% endfor %}
 {% endblock %}
